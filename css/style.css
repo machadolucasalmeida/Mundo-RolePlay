@@ -6,17 +6,81 @@
     padding: 0px;
     box-sizing: border-box;
 }
-
 body,
 html {
     width: 100%;
     height: 100%;
+    scroll-behavior: smooth;
 }
-
 body {
     background-image: linear-gradient(to left, #09051b, #07111b);
     border-radius: 30px;
 }
+
+/*NAVBAR CONFIGURATION*/
+
+ul{
+    list-style: none;
+}
+#a_icons{
+    text-decoration: none;
+    align-items: center;
+}
+.container {
+    max-width: 968px;
+    margin: auto;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    transition: 0.4s;
+}
+.nav {
+    height: 4.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav_icon {
+    font-size: 1.5rem;
+}
+.nav_name{
+    font-family: 'Lexend';
+}
+.nav_list,
+.nav_link {
+    display: flex;
+}
+
+.nav_list {
+    justify-content: space-around;
+    column-gap: 3rem;
+}
+
+.nav_link {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 0.25rem;
+    color: white;
+}
+
+.nav_link:hover {
+    color: #00ff95;
+}
+
+i.nav_icon {
+    display: none;
+}
+.active_link{
+    position: relative;
+    color: #00ff95;
+    transition: 0.3s;
+}
+
+/*OTHERS PAGE CONFIG*/
 
 .title-header a{
     text-decoration: none;
@@ -57,21 +121,53 @@ body {
     width: 150px;
     height: 35px;
     border-radius: 25px;
-    border: 2px solid white;
+    border: none;
     cursor: pointer;
-    -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(0, 0, 0, 0.103));
 }
 
-button:hover{
+.button{
+    position: relative;
+    width: 150px;
+    height: 35px;
+}
+
+.button button::before, .button button:after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 152px;
+    height: 37px;
+    top: -2px;
+    left: -2px;
+    border: 1px solid #16be78;
+    border-radius: 25px;
+    opacity: 0;
+    animation: animacao-botao 1.5s linear infinite;
+}
+.button button:after{
+    animation-delay: .5s;
+}
+@keyframes animacao-botao {
+    0%{
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1.2);
+        opacity: 0;
+    }
+}
+.button button:hover{
     box-shadow: 0 0 10px #00ff95, 0 0 40px #00ff95, 0 0 80px #00ff95;
     background-color: #00ff95;
-    border: 1px solid white;
+    border: none;
     color: black;
     transition: all 1s ease;
     cursor: pointer;
 }
-
-
 
 .text-about{
     margin-top: 20%;
@@ -133,3 +229,94 @@ button:hover{
     transform: translateY(-10px);
     transition: all 1s;
 }
+
+
+
+/*RESPONSIVIDADE CELULAR*/
+
+@media screen and (max-width: 992px) {
+    .nav_menu {
+
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        background: #1B2020;
+        width: 85%;
+        margin-left: 7%;
+        height: 4rem;
+        padding: 0 1rem;
+        display: grid;
+        align-items: center;
+        border-radius: 15px;
+        margin-bottom: 4%;
+        transition: .4s;
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    .container {
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+    .nav{
+        height: 3rem;
+    }
+    i.nav_icon{
+        display: block;
+    }
+}
+@media screen and (max-width: 600px) {
+    #images-highlights{
+        padding-bottom: 15%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .nav_list{
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 526px) {
+    .nav_name{
+        display: none;
+    }
+}
+@media screen and (max-width: 510px) {
+    #images-highlights img{
+        width: 120px;
+    }
+    #images-highlights{
+        padding-bottom: 35%;
+        padding-left: 4%;
+    }
+}
+@media screen and (max-width: 414px) {
+    #images-highlights{
+        margin-left: 2%;
+    }
+}
+@media screen and (max-width: 360px) {
+    #images-highlights{
+        margin-left: 0;
+        padding-left: 25%;
+    }
+
+}
+@media screen and (max-width: 320px) {
+    .nav_list {
+        column-gap: 2rem;
+    }
+    #images-highlights img{
+        width: 100px;
+    }
+    #images-highlights{
+        padding-left: 28%;
+    }
+}
+@media screen and (max-width: 264px) {
+    .nav_list {
+        column-gap: 1.5rem;
+    }
+    .nav_icon{
+        font-size: 1rem;
+    }
+}
+

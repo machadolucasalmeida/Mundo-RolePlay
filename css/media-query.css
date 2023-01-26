@@ -1,6 +1,20 @@
 @media screen and (min-width: 768px) and (max-width: 992px) {
     /*TABLET*/
-
+    #images-highlights{
+        padding-bottom: 15%;
+        padding-left: 7%;
+    }
+}
+@media screen and (min-width: 993px) {
+    .active_link::before{
+        content: '';
+        position: absolute;
+        bottom: -1rem;
+        width: 1rem;
+        height: 3px;
+        background-color: #00ff95;
+        border-radius: 3px;
+    }
 }
 @media screen and (min-width: 992px) and (max-width: 1200px) {
     /*DESKTOP*/
