@@ -124,6 +124,20 @@ i.nav_icon {
 }
 .textMain .image1{
     display: none;
+    transform: translateY(0px);
+    animation: animacao-imagem 5s ease-in-out infinite;
+}
+
+@keyframes animacao-imagem {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
 }
 .textMain h1{
     font-family: 'Lexend';
@@ -245,6 +259,176 @@ i.nav_icon {
     transform: translateY(-10px);
     transition: all 1s;
 }
+
+
+
+
+/*BOTÃO DISCORD*/
+
+.botao_discord{
+    display: none;
+}
+.link-discord {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 85px;
+    right: 40px;
+    background-color: #404EED;
+    color: white;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 25px;
+    z-index: 1000;
+}
+
+#discord1 {
+    margin-top: 17px;
+}
+
+.link-discord:hover {
+    transform: translateY(-10px);
+    transition: all 1s;
+    transform-origin: button;
+
+    box-shadow: 0 0 10px #404EED, 0 0 40px #404EED, 0 0 80px #404EED;
+    background-color: #404EED;
+}
+
+.link-discord::before, .link-discord:after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 63px;
+    height: 63px;
+    top: -3px;
+    left: -3px;
+    border: 2px solid #404EED;
+    border-radius: 50%;
+    opacity: 0;
+    animation: animacao-botao-discord 1.5s linear infinite;
+}
+.button button:after{
+    animation-delay: .5s;
+}
+@keyframes animacao-botao-discord {
+    0%{
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1.2);
+        opacity: 0;
+    }
+}
+
+
+/*BOTÕES FIM PAGINA*/
+
+.buttons_configuration{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;   
+}
+
+.botao-contato button{
+    background-color: #16be78;
+    color: white;
+    font-family: 'Sarala';
+    font-size: 18px;
+    width: 150px;
+    height: 35px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+}
+.botao-contato button:hover{
+    transform: translateY(-10px);
+    transition: all 1s;
+    box-shadow: 0 0 10px #00ff95, 0 0 40px #00ff95, 0 0 80px #00ff95;
+    background-color: #00ff95;
+    border: none;
+    color: black;
+    transition: all 1s ease;
+    cursor: pointer;
+}
+.botao-doacao button{
+    background-color: #16be78;
+    color: white;
+    font-family: 'Sarala';
+    font-size: 18px;
+    width: 150px;
+    height: 35px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+}
+.botao-doacao button:hover{
+    transform: translateY(-10px);
+    transition: all 1s;
+    box-shadow: 0 0 10px #00ff95, 0 0 40px #00ff95, 0 0 80px #00ff95;
+    background-color: #00ff95;
+    border: none;
+    color: black;
+    transition: all 1s ease;
+    cursor: pointer;
+}
+.botao-wallpaper button{
+    background-color: #16be78;
+    color: white;
+    font-family: 'Sarala';
+    font-size: 18px;
+    width: 150px;
+    height: 35px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+}
+.botao-wallpaper button:hover{
+    transform: translateY(-10px);
+    transition: all 1s;
+    box-shadow: 0 0 10px #00ff95, 0 0 40px #00ff95, 0 0 80px #00ff95;
+    background-color: #00ff95;
+    border: none;
+    color: black;
+    transition: all 1s ease;
+    cursor: pointer;
+}
+
+
+.line_up{
+    border-top: 1px solid white;
+    width: 92%;
+    margin-left: 4%;
+}
+footer{
+    width: 100%;
+    height: 10%;
+    left: 0px;
+    background: transparent;
+    margin-top: 10%;
+}
+
+
+.conteudo_footer div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 10vh;
+    gap: 30%;
+}
+.conteudo_footer div p{
+    font-family: 'Lexend';
+    color: white;
+    font-size: 15px;
+    text-align: center;
+}
+
+
 /*RESPONSIVIDADE CELULAR*/
 
 @media screen and (max-width: 992px) {
@@ -275,10 +459,28 @@ i.nav_icon {
     i.nav_icon{
         display: block;
     }
+    footer{
+        height: 27%;
+    }
+}
+@media screen and (max-width: 766px) {
+    .conteudo_footer div{
+        gap: 5%;
+    }
+    .conteudo_footer div p{
+        font-size: 12px;
+    }
 }
 @media screen and (max-width: 600px) {
     #images-highlights{
         padding-bottom: 15%;
+    }
+}
+@media screen and (max-width: 735px) {
+    .buttons_configuration{
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 50px;
     }
 }
 
@@ -287,10 +489,12 @@ i.nav_icon {
         justify-content: center;
     }
 }
+
 @media screen and (max-width: 526px) {
     .nav_name{
         display: none;
     }
+
 }
 @media screen and (max-width: 510px) {
     #images-highlights img{
@@ -300,6 +504,7 @@ i.nav_icon {
         padding-bottom: 35%;
         padding-left: 4%;
     }
+
 }
 @media screen and (max-width: 414px) {
     #images-highlights{
@@ -310,6 +515,14 @@ i.nav_icon {
     #images-highlights{
         margin-left: 0;
         padding-left: 25%;
+    }
+    .conteudo_footer div{
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 15px;
+    }
+    .conteudo_footer div p{
+        font-size: 12px;
     }
 
 }

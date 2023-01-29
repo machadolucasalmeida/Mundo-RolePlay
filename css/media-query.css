@@ -4,6 +4,20 @@
         padding-bottom: 15%;
         padding-left: 7%;
     }
+    .conteudo_footer div{
+        gap: 10%;
+    }
+
+}
+
+@media screen and (min-width: 993px) and (max-width: 1300px) {
+    .conteudo_footer div{
+        gap: 20%;
+    }
+    .conteudo_footer div p{
+        font-size: 15px;
+    }
+
 }
 @media screen and (min-width: 993px) {
     .active_link::before{
@@ -16,9 +30,33 @@
         border-radius: 3px;
     }
 }
-@media screen and (min-width: 992px) and (max-width: 1300px) {
+
+@media screen and (min-width: 993px) and (max-width: 1300px) {
     /*DESKTOP*/
-    
+    .botao_discord{
+        display: block;
+    }
+    .textMain .image1{
+        display: block;
+        width: 300px;
+        margin-left: 20%;
+    }
+    .textMain{
+        display: flex;
+    }
+}
+@media screen and (min-width: 993px){
+    #discord2{
+        display: none;
+    }
+}
+@media screen and (min-width: 1200px) and (max-width: 1300px){
+    /*DESKTOP*/
+    .textMain .image1{
+        display: block;
+        width: 300px;
+        margin-left: 35%;
+    }
 }
 @media screen and (min-width: 1300px){
     /*GRANDES TELAS*/
@@ -42,10 +80,12 @@
         display: block;
         width: 350px;
         margin-right: 10%;
-        
     }
     .textMain{
         display: flex;
         justify-content: space-between;
+    }
+    .botao_discord{
+        display: block;
     }
 }
