@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&family=Righteous&family=Sarala:wght@400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.part1 .title-page h1{
+    font-family: 'Lexend';
+    color: white;
+    font-weight: normal;
+    font-style: normal;
+}
+.part1 .title-page{
+    margin-left: 11%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}

@@ -73,9 +73,6 @@
         justify-content: center;
         gap: 40px;
     }
-    .text-about p{
-        text-align: center;
-    }
     .textMain .image1{
         display: block;
         width: 350px;
