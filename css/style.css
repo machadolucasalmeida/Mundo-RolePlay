@@ -162,6 +162,8 @@ i.nav_icon {
     border-radius: 25px;
     border: none;
     cursor: pointer;
+    text-shadow: 1px 1px 2px black;
+    text-align: center;
 }
 
 .button{
@@ -203,7 +205,7 @@ i.nav_icon {
     box-shadow: 0 0 10px #00ff95, 0 0 40px #00ff95, 0 0 80px #00ff95;
     background-color: #00ff95;
     border: none;
-    color: black;
+   
     transition: all 1s ease;
     cursor: pointer;
 }
@@ -353,6 +355,7 @@ i.nav_icon {
     border-radius: 25px;
     border: none;
     cursor: pointer;
+    text-shadow: 1px 1px 2px black;
 }
 .botao-contato button:hover{
     transform: translateY(-10px);
@@ -360,7 +363,7 @@ i.nav_icon {
     box-shadow: 0 0 10px #00ff95, 0 0 40px #00ff95, 0 0 80px #00ff95;
     background-color: #00ff95;
     border: none;
-    color: black;
+    
     transition: all 1s ease;
     cursor: pointer;
 }
@@ -375,6 +378,7 @@ i.nav_icon {
     border-radius: 25px;
     border: none;
     cursor: pointer;
+    text-shadow: 1px 1px 2px black;
 }
 .botao-doacao button:hover{
     transform: translateY(-10px);
@@ -382,7 +386,7 @@ i.nav_icon {
     box-shadow: 0 0 10px #00ff95, 0 0 40px #00ff95, 0 0 80px #00ff95;
     background-color: #00ff95;
     border: none;
-    color: black;
+   
     transition: all 1s ease;
     cursor: pointer;
 }
@@ -397,6 +401,7 @@ i.nav_icon {
     border-radius: 25px;
     border: none;
     cursor: pointer;
+    text-shadow: 1px 1px 2px black;
 }
 .botao-wallpaper button:hover{
     transform: translateY(-10px);
@@ -404,7 +409,7 @@ i.nav_icon {
     box-shadow: 0 0 10px #00ff95, 0 0 40px #00ff95, 0 0 80px #00ff95;
     background-color: #00ff95;
     border: none;
-    color: black;
+   
     transition: all 1s ease;
     cursor: pointer;
 }
