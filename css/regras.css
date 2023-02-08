@@ -138,12 +138,6 @@
     margin-bottom: 25%;
     text-transform: uppercase;
 }
-.card-3-txt-mobile{
-    display: none;
-}
-.card-4-txt-mobile{
-    display: none;
-}
 
 .container-card {
     width: 140px;
@@ -153,7 +147,6 @@
     background: rgba(255, 255, 255, 0.1);
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     border-left: 1px solid rgba(255, 255, 255, 0.5);
-
 }
 
 .container-card:hover {
@@ -227,88 +220,6 @@
     margin-bottom: 25%;
     text-transform: uppercase;
 }
-
-/*CONFIGURAÇÃO MEDIA-QUERY PARA CELULARES*/
-@media screen and (max-width: 533px) {
-    .part2 {
-        flex-direction: column;
-        align-items: flex-start;
-        transition: all 1s ease;
-    }
-}
-
-@media screen and (max-width: 496px) {
-    
-    .topicos-frequentes {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        transition: all 1s ease;
-    }
-
-    .topicos-frequentes li {
-        font-size: 14px;
-        transition: all 1s ease;
-    }
-    .conteudo_footer div{
-        gap: 3%;
-        transition: all 1s ease;
-    }
-    .conteudo_footer div p{
-        font-size: 10px;
-        transition: all 1s ease;
-    }
-    .container-card {
-        width: 120px;
-        height: 150px;
-        transition: all 1s ease;
-    }
-    #card-25 {
-        width: 245px;
-        height: 95px;
-        transition: all 1s ease;
-    }
-    .card-3-txt{
-        display: none;
-        transition: all 1s ease;
-    }
-    .card-4-txt{
-        display: none;
-        transition: all 1s ease;
-    }
-    .card-3-txt-mobile{
-        display: block;
-        transition: all 1s ease;
-    }
-    .card-4-txt-mobile{
-        display: block;
-        transition: all 1s ease;
-    }
-    #txt-container {
-        padding-top: 65px;
-        width: 120px;
-        height: 150px;
-        transition: all 1s ease;
-    }
-    #txt-container-falas {
-
-        padding-top: 35px;
-        width: 245px;
-        height: 95px;
-        transition: all 1s ease;
-    }
-    .cards {
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        gap: 25px;
-        min-width: 100vh;
-    }
-    .card-25-falas-rp {
-        display: none;
-        align-items: center;
-        justify-content: flex-start;
-        flex-direction: column;
-        min-width: 100vh;
-    }
+.cards-tablet-pc{
+    display: none;
 }
