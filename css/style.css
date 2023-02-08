@@ -16,7 +16,7 @@ html {
 }
 body {
     background-image: linear-gradient(to left, #09051b, #07111b);
-    border-radius: 30px;
+    
 }
 /* scrollbar */
 body::-webkit-scrollbar {
