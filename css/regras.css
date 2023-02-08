@@ -297,4 +297,18 @@
         height: 95px;
         transition: all 1s ease;
     }
+    .cards {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 25px;
+        min-width: 100vh;
+    }
+    .card-25-falas-rp {
+        display: none;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        min-width: 100vh;
+    }
 }
